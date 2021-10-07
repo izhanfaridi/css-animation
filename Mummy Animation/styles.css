@@ -1,0 +1,80 @@
+html,body{
+    margin: 0;
+}
+
+.sky{
+    height: 400px;
+    background-color: skyblue;
+}
+.desert{
+    height: 250px;
+    background-color: #efa72c;
+}
+.road{
+    height: 250px;
+    background-color: #efa72c;
+    border-top: solid 5px #f0b857;
+    border-bottom: solid 5px #f0b857;
+}
+
+.giza{
+    opacity: 1;
+    position: relative;
+    bottom: 350px;
+    right: 700px;
+    animation: pyra_movement 180s linear infinite both ;
+}
+
+.pyra{
+    opacity: 1;
+    position: relative;
+    bottom: 170px;
+    animation: pyra_movement 80s linear infinite both ;
+}
+
+.sun{
+    position: absolute;
+    right: 30px;
+}
+
+.TheMummy{
+    position: relative;
+    bottom:75px;
+    left: -100px;
+    animation: run 6s linear infinite both;
+}
+
+
+.rock1{
+    position: relative;
+    top: -270px;
+    left: 600px;
+    animation: rock 6s linear infinite both reverse;
+}
+.rock2{
+    position: relative;
+    top: -135px;
+    left: 600px;
+    animation: rock 6s linear infinite both reverse;
+}
+.bird{
+    animation: run 6s linear infinite both reverse;
+}
+
+
+
+/*ANIMATIONS*/
+@keyframes pyra_movement{
+    from{right: -1050px ;}
+    to{right: 100%;}
+}
+
+@keyframes run{
+    from{transform: translateX(-330px);}
+    to{transform: translateX(1200px);}
+}
+
+@keyframes rock{
+    from{left: -100px;}
+    to{left: 100%;}
+}
